@@ -1,0 +1,188 @@
+<html>
+	<head>
+		<meta name="keywords" content="" />
+		<meta name="description" content="" />
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<title>moxi</title>
+		<link href="http://fonts.googleapis.com/css?family=Abel" rel="stylesheet" type="text/css" />
+		<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+		<script src="js/jquery-latest.js"></script>
+		<script type="text/javascript">
+		$(document).ready(function(){
+                var menu = $("#sidebar");
+                var content = $("#content");
+                menu.live("click",function(e){
+                    e.preventDefault();
+                    var target = e.target;
+                    var href = target.href;
+                    if(href){
+                        $.ajax(href).success(function(data){
+                            content.html(data);
+                            $(".active", menu).removeClass("active");
+                            $(target.parentNode).addClass("active");
+                        });
+                    }
+                });
+            });
+        </script>
+		<style type="text/css">
+		@import "gallery.css";
+		</style>
+
+	</head>
+
+	<body>
+		<div id="wrapper">
+			<div id="header-wrapper">
+				<div id="header">
+					<div id="menu1">
+						<ul>
+							<li class="current_page_item"><a href="index.html">首页</a></li>
+							<li><a href="#">所有商品</a></li>
+						</ul>
+					</div>
+					<div id="logo">
+						<h1>
+							<a href="http://www.zhongmoxi.com/">莫兮花屋</a>
+						</h1>
+						<p>
+							"design by moxi"
+						</p>
+					</div>
+					<div id="menu2">
+						<ul>
+							<li class="current_page_item">
+								<a href="#">订购须知</a>
+							</li>
+							<li>
+								<a href="#" target="_blank" title="null">关于莫兮</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div id="welcome" >
+				<h2 class="title">
+					<a href="#">Welcome to this beautiful garden</a>
+				</h2>
+				<div id="entry">
+					<p>
+						This is 
+						<strong>Moxi</strong>
+						,A girl,From Hust,now @ 
+						<a href="http://www.zhihu.com/moxi">zhihu</a>
+						:)
+					</p>
+				</div>
+			</div>
+			<div id="page">
+				<div id="page-bgtop">
+					<div id="page-bgbtm">
+						<div id="content">
+							<div class="post">
+								<h2 class="title">
+									<a href="#">钟莫兮</a>
+								</h2>
+								<div class="entry">
+									<p>
+										<img src="images/QQ20120831-6.png" alt width="225" height="225" class="alignleft">
+										Hi~,我是莫兮 <br>
+										我想拥有一个庄园，有一个花园，开满 Rainbow Rose <br>
+										我想去很多地方旅行，特别是很多地方的郊外 <br>
+										我想有一份既能珍藏，又能生活的爱情 <br>
+										尽管没有的时候，也不会过份的期待 <br>
+										当然，以上都只是在我的想象里 <br>
+										现实中的我每天在电脑面前，双目无神<br>
+										想要做到自己能养的活自己，想要有个人我会愿意为他 <br>
+										上得了厅堂，下的了厨房 <br>
+										如果这些都有做到了，我希望可以晒着太阳发着呆	<br>	
+									</p>
+								</div>
+							</div>
+						</div>
+						<div id="sidebar">
+							<ul>
+								<li>
+									<h2>Something about me</h2>
+									<ul>
+										<li class="active">
+											<a href="premonition.html">I would like</a>
+										</li>
+										<li>
+											<a href="moxige-ajax.html">「莫兮哥」</a>
+										</li>
+										<li>
+											<a href="premonition.html">Metus aliquam pellentesque</a>
+										</li>
+										<li>
+											<a href="premonition.html">Suspendisse iaculis mauris</a>
+										</li>
+										<li>
+											<a href="premonition.html">Urnanet non molestie semper</a>
+										</li>
+										<li>
+											<a href="premonition.html">Proin gravida orci porttitor</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="splash">
+				<ul>
+					<li class="first">
+						<img src="images/psu (3).jpeg" width="225" height="225" alt>
+					</li>
+					<li>
+						<img src="images/QQ20120831-2.png" width="225" height="225" alt>
+					</li>
+					<li>
+						<img src="images/QQ20120831-3.png" width="225" height="225" alt>
+					</li>
+					<li>
+						<img src="images/QQ20120831-7.png" width="225" height="225" alt>
+					</li>
+				</ul>
+			</div>
+			<div id="three-columns">
+				<div id="column1">
+					<h2>Maecenas luctus</h2>
+					<p>
+						"Etiam non felis. Donec ut ante. In id eros. Suspendisse lacus turpis, cursus egestas at sem. Mauris quam enim, molestie."
+					</p>
+					<p>
+						<a href="#" class="link-style">Read More</a>
+					</p>
+				</div>
+				<div id="column2">
+					<h2>Maecenas luctus</h2>
+					<p>
+						"Etiam non felis. Donec ut ante. In id eros. Suspendisse lacus turpis, cursus egestas at sem. Mauris quam enim, molestie."
+					</p>
+					<p>
+						<a href="#" class="link-style">Read More</a>
+					</p>
+				</div>
+				<div id="column3">
+					<h2>Maecenas luctus</h2>
+					<p>
+						"Etiam non felis. Donec ut ante. In id eros. Suspendisse lacus turpis, cursus egestas at sem. Mauris quam enim, molestie."
+					</p>
+					<p>
+						<a href="#" class="link-style">Read More</a>
+					</p>
+				</div>
+			</div>
+			
+		</div>
+		<div id="footer">
+			<p>
+				"Copyright (c) 2012 Sitename.com.All rights reserved.Design by "
+				<a href="http://www.zhongmoxi.com">moxi</a>
+				"."
+			</p>
+		</div>
+	</body>
+</html>
