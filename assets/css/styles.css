@@ -133,6 +133,7 @@ h1{
     overflow:hidden;
     width: 830px;
     margin:0 auto;
+    margin-bottom: 100px;
 }
 
 #container li{
