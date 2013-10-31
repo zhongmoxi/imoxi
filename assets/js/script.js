@@ -29,7 +29,7 @@ $(document).ready(function(){
 	});
 
 	// Creating the "Everything" option in the menu:
-	if(itemsByTags.length>0){
+	if(items.length){
 		createList('Everything',items);
 	}
 	
