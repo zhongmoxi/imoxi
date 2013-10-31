@@ -29,7 +29,10 @@ $(document).ready(function(){
 	});
 
 	// Creating the "Everything" option in the menu:
-	createList('Everything',items);
+	if(itemsByTags.length>0){
+		createList('Everything',items);
+	}
+	
 
 	// Looping though the arrays in itemsByTags:
 	$.each(itemsByTags,function(k,v){
